@@ -40,7 +40,16 @@
     text-transform:uppercase;color:var(--muted);margin:0 0 24px;
   }
   .bio{font-size:1.3rem;line-height:1.5;margin:0 auto 32px;max-width:440px;text-wrap:balance}
-  .actions{display:flex;flex-direction:column;gap:12px;align-items:stretch;max-width:340px;margin:0 auto}
+  .soon{
+    max-width:380px;margin:0 auto 14px;padding:18px 18px;background:var(--ink);color:var(--cream);
+    border-radius:2px;text-align:center;
+  }
+  .soon strong{display:block;font-size:1.25rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700}
+  .soon span{display:block;font-size:1.15rem;line-height:1.35;margin-top:6px;color:#E9DFCB}
+  .soon i{display:inline-block;width:9px;height:9px;border-radius:50%;background:#D9B53A;margin-right:10px;vertical-align:middle;animation:pulse 1.6s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
+  @media (prefers-reduced-motion:reduce){.soon i{animation:none}}
+  .actions{display:flex;flex-direction:column;gap:12px;align-items:stretch;max-width:380px;margin:0 auto}
   .btn{
     display:block;font-size:1.15rem;font-weight:700;letter-spacing:.06em;
     text-decoration:none;padding:15px 24px;border-radius:2px;
@@ -70,6 +79,7 @@
 
   <p class="bio">I spent 17 years in fine dining kitchens, and now I cook with clay. Every mug, bowl and vase is thrown on the wheel, glazed and packed by me in Warsaw.</p>
 
+  <div class="soon" role="status"><strong><i aria-hidden="true"></i>Etsy shop coming soon</strong><span>Want to know when the shop opens? Subscribe to the newsletter.</span></div>
   <div class="actions">
     <!-- ETSY GOMB: a shop nyitásakor ide kerül vissza (első gomb, btn-main):
     <a class="btn btn-main" href="https://www.etsy.com/shop/NPmadeStudio">Shop on Etsy</a> -->
