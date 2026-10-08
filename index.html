@@ -41,11 +41,7 @@
   .topbar .track span{padding:0 1.4em}
   .topbar .track i{display:inline-block;width:6px;height:6px;border-radius:50%;background:#D9B53A;vertical-align:middle}
   @keyframes ticker{from{transform:translateX(-50%)}to{transform:translateX(0)}}
-  @media (prefers-reduced-motion:reduce){
-    .topbar{text-align:center}
-    .topbar .track{display:none}
-    .topbar .still{position:static;width:auto;height:auto;overflow:visible;clip:auto}
-  }
+  @media (prefers-reduced-motion:reduce){.topbar .track{animation-duration:70s}}
   .logo{width:104px;height:auto;display:block;margin:0 auto 14px}
   .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
   h1{font-size:2rem;line-height:1.2;font-weight:normal;margin:0 0 6px;letter-spacing:.01em}
