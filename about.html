@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>About | N.P.made</title>
+<meta name="description" content="From fine dining kitchens to the pottery wheel: the story of Norbert, the former chef behind N.P.made handmade ceramics in Warsaw.">
+<link rel="canonical" href="https://npmadestudio.com/about">
+<meta property="og:title" content="About | N.P.made">
+<meta property="og:description" content="From fine dining kitchens to the pottery wheel: the story behind N.P.made.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://npmadestudio.com/about">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#F7F1E6;
+    --ink:#2B2723;
+    --muted:#6B6258;
+    --line:#DDD2BF;
+    --olive:#836A10;
+    --olive-dark:#5E4C0B;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--olive);
+    color:var(--ink);
+    font-family:"Cormorant Garamond",Georgia,"Times New Roman",serif;font-weight:500;
+    line-height:1.6;
+    padding:24px max(16px,env(safe-area-inset-right)) 24px max(16px,env(safe-area-inset-left));
+    min-height:100vh;
+  }
+  main{max-width:560px;margin:0 auto;padding:44px 24px 32px;text-align:center;background:var(--cream);border:1px solid var(--olive-dark);border-radius:3px}
+  .topbar{margin:-24px calc(-1*max(16px,env(safe-area-inset-right))) 24px calc(-1*max(16px,env(safe-area-inset-left)));position:sticky;top:0;z-index:1;background:var(--ink);color:var(--cream);overflow:hidden;white-space:nowrap;font-size:.85rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;line-height:1;padding:8px 0}
+  .topbar .track{display:inline-flex;align-items:baseline;animation:ticker 40s linear infinite}
+  .topbar .track span{padding:0 1.4em}
+  .topbar .track i{display:inline-block;width:6px;height:6px;border-radius:50%;background:#D9B53A;transform:translateY(calc(3px - .33em))}
+  @keyframes ticker{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+  @media (prefers-reduced-motion:reduce){.topbar .track{animation-duration:70s}}
+  .logo{width:104px;height:auto;display:block;margin:0 auto 14px}
+  .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+  h1{font-size:2rem;line-height:1.2;font-weight:normal;margin:0 0 6px;letter-spacing:.01em}
+  .tag{
+    font-size:.95rem;font-weight:600;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 24px;
+  }
+  .bio{font-size:1.3rem;line-height:1.5;margin:0 auto 32px;max-width:440px;text-wrap:balance}
+  .soon{
+    max-width:380px;margin:0 auto 14px;padding:18px 18px;background:var(--ink);color:var(--cream);
+    border-radius:2px;text-align:center;
+  }
+  .soon strong{display:block;font-size:1.25rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700}
+  .soon span{display:block;font-size:1.15rem;line-height:1.35;margin-top:6px;color:#E9DFCB}
+  .soon i{display:inline-block;width:9px;height:9px;border-radius:50%;background:#D9B53A;margin-right:10px;vertical-align:middle;animation:pulse 1.6s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
+  @media (prefers-reduced-motion:reduce){.soon i{animation:none}}
+  .actions{display:flex;flex-direction:column;gap:12px;align-items:stretch;max-width:380px;margin:0 auto}
+  .btn{
+    display:block;font-size:1.15rem;font-weight:700;letter-spacing:.06em;
+    text-decoration:none;padding:15px 24px;border-radius:2px;
+  }
+  .btn-main{background:var(--olive);color:var(--cream);font-weight:bold}
+  .btn-main:hover{background:var(--olive-dark)}
+  .btn-news{position:relative;overflow:hidden}
+  .btn-news::after{content:"";position:absolute;top:0;bottom:0;left:-60%;width:40%;background:linear-gradient(100deg,transparent,rgba(255,244,214,.45),transparent);transform:skewX(-20deg);animation:shine 3.2s ease-in-out infinite;pointer-events:none}
+  @keyframes shine{0%{left:-60%}45%,100%{left:130%}}
+  .btn-news svg{animation:ring 3.2s ease-in-out infinite;transform-origin:50% 20%}
+  @keyframes ring{0%,48%,100%{transform:rotate(0)}52%{transform:rotate(-12deg)}56%{transform:rotate(10deg)}60%{transform:rotate(-6deg)}64%{transform:rotate(0)}}
+  @media (prefers-reduced-motion:reduce){.btn-news::after,.btn-news svg{animation:none}}
+  .plate{display:block;width:100%;max-width:380px;height:auto;margin:0 auto 28px}
+  .disc{display:block;width:100%;max-width:380px;height:auto;margin:0 auto 22px}
+  .bts{margin:10px 0 -4px;text-align:center;font-size:1.05rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--olive-dark)}
+  .btn-ghost{border:1px solid var(--ink);color:var(--ink)}
+  .btn-icon{display:flex;align-items:center;justify-content:center;gap:10px}
+  .btn-icon svg{width:1.25em;height:1.25em;flex:none;fill:currentColor}
+  .btn-ghost:hover{background:var(--ink);color:var(--cream)}
+  .btn:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+  .custom{margin:40px auto 0;padding-top:28px;border-top:1px solid var(--line);max-width:440px}
+  .custom h2{font-size:1.5rem;font-weight:600;margin:0 0 8px}
+  .custom p{margin:0 0 14px;font-size:1.15rem;color:var(--muted)}
+  .mail{
+    font-size:1.15rem;font-weight:600;color:var(--ink);
+    text-underline-offset:4px;
+  }
+  footer{
+    font-size:.95rem;color:var(--muted);margin-top:44px;
+  }
+  @media (min-width:900px) and (hover:hover) and (pointer:fine){.topbar{max-width:880px;margin:0 auto;border-radius:3px 3px 0 0;position:static}main{border-top:0;border-radius:0 0 3px 3px}}
+  @media (min-width:900px){main{max-width:880px;padding:56px 56px 40px}.bio,.custom{max-width:560px}.plate,.disc{max-width:480px}.soon,.actions{max-width:440px}}
+
+  .back{display:inline-block;margin:0 0 18px;font-size:1.05rem;font-weight:600;letter-spacing:.06em;color:var(--muted);text-decoration:none}
+  .back:hover{color:var(--ink)}
+  .story{max-width:560px;margin:0 auto 36px;text-align:left}
+  .story p{font-size:1.2rem;line-height:1.6;margin:0 0 18px}
+  .story .lead{font-size:1.35rem}
+  .sign{font-size:2rem;font-style:italic;font-weight:600;text-align:center;margin:28px 0 0}
+  .story-link{display:inline-block;margin:-16px 0 28px;font-size:1.15rem;font-weight:600;color:var(--ink);text-underline-offset:4px}
+</style>
+</head>
+<body>
+<div class="topbar"><p class="still sr" style="margin:0">Etsy shop coming soon</p><div class="track" aria-hidden="true"><span>Etsy shop coming soon</span><i></i><span>Etsy shop coming soon</span><i></i><span>Etsy shop coming soon</span><i></i><span>Etsy shop coming soon</span><i></i><span>Etsy shop coming soon</span><i></i><span>Etsy shop coming soon</span><i></i><span>Etsy shop coming soon</span><i></i><span>Etsy shop coming soon</span><i></i><span>Etsy shop coming soon</span><i></i><span>Etsy shop coming soon</span><i></i><span>Etsy shop coming soon</span><i></i><span>Etsy shop coming soon</span><i></i><span>Etsy shop coming soon</span><i></i><span>Etsy shop coming soon</span><i></i><span>Etsy shop coming soon</span><i></i><span>Etsy shop coming soon</span><i></i><span>Etsy shop coming soon</span><i></i><span>Etsy shop coming soon</span><i></i><span>Etsy shop coming soon</span><i></i><span>Etsy shop coming soon</span><i></i><span>Etsy shop coming soon</span><i></i><span>Etsy shop coming soon</span><i></i><span>Etsy shop coming soon</span><i></i><span>Etsy shop coming soon</span><i></i></div></div>
+<main>
+  <a class="back" href="/">&larr; Home</a>
+  <a href="/"><img class="logo" src="logo.png" alt="N.P.made" width="300" height="470"></a>
+  <h1>About</h1>
+  <p class="tag">Handformed</p>
+
+  <article class="story">
+    <p class="lead">I&rsquo;m Norbert from Hungary, and even though I make ceramics today, my journey didn&rsquo;t start in a pottery studio. It started in a restaurant kitchen.</p>
+    <p>I began working in restaurants at 16, simply because I loved cooking, and that love only grew from there. Over the next 16-17 years, I worked my way up through better and better kitchens, drawn into the world of fine dining: the constant push to improve, the obsession with precision, the chase for Michelin stars. And then, one day, I realized I was slowly burning out.</p>
+    <p>Around that time, an opportunity came up to work at the Hungarian embassy in Warsaw, Poland, representing Hungarian cuisine abroad. I spent seven years there, but the burnout didn&rsquo;t fade, it deepened. At some point, I barely had the motivation to cook at all.</p>
+    <p>And somewhere in that empty space, ceramics found me.</p>
+    <p>I was looking for something that could bring back the feeling cooking once gave me. Creating with my hands, experimenting, learning. I started throwing pottery on the wheel two years ago, and after about a year, I knew this was what I wanted to do. Since then I&rsquo;ve been experimenting with my own glazes, and a style of my own has slowly started to take shape. I wouldn&rsquo;t say I&rsquo;ve found it yet, but maybe that&rsquo;s not really the point. The point is the journey itself.</p>
+    <p>Because somewhere along the way, I realized something, cooking and working with clay have far more in common than you&rsquo;d think.</p>
+    <p>When you take a piece of clay in your hands and start shaping it, it&rsquo;s the same as reaching for a piece of vegetable or meat. You pay attention, you sense, you adapt. Experimenting with glazes and forms is really just recipe development, only here, colors and textures play the role of spices.<br>And firing? Firing is just cooking! Finding the exact temperature and cycle that brings out the best in a mug is no different from finding the perfect temperature for cooking a piece of meat.</p>
+    <p>That realization brought my love of cooking back too, and along the way, it gave me a new passion, one I&rsquo;d love to share with you now.</p>
+    <p>What you&rsquo;ll find here isn&rsquo;t mass produced. Every piece is shaped, fired, and finished by my own hands, functional and decorative ceramics alike, made for people who appreciate beautiful, quality, one-of-a-kind objects, whether for their own home or as a gift.</p>
+    <p>If you like the feeling that an object has a story behind it, you&rsquo;re in the right place.</p>
+    <p class="sign">N.</p>
+  </article>
+
+  <div class="actions">
+    <a class="btn btn-main btn-icon btn-news" href="https://tinyurl.com/npmade-news"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13zm2.3.5 7.7 6.2L19.7 6H4.3zM20 7.6l-7.4 6a1 1 0 0 1-1.2 0L4 7.6V18h16V7.6z"/></svg><span>Join the newsletter</span></a>
+    <a class="btn btn-ghost" href="/">Back to home</a>
+  </div>
+
+  <footer>&copy; N.P.made</footer>
+</main>
+</body>
+</html>
