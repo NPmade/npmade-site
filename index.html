@@ -66,6 +66,12 @@
   }
   .btn-main{background:var(--olive);color:var(--cream);font-weight:bold}
   .btn-main:hover{background:var(--olive-dark)}
+  .btn-news{position:relative;overflow:hidden}
+  .btn-news::after{content:"";position:absolute;top:0;bottom:0;left:-60%;width:40%;background:linear-gradient(100deg,transparent,rgba(255,244,214,.45),transparent);transform:skewX(-20deg);animation:shine 3.2s ease-in-out infinite;pointer-events:none}
+  @keyframes shine{0%{left:-60%}45%,100%{left:130%}}
+  .btn-news svg{animation:ring 3.2s ease-in-out infinite;transform-origin:50% 20%}
+  @keyframes ring{0%,48%,100%{transform:rotate(0)}52%{transform:rotate(-12deg)}56%{transform:rotate(10deg)}60%{transform:rotate(-6deg)}64%{transform:rotate(0)}}
+  @media (prefers-reduced-motion:reduce){.btn-news::after,.btn-news svg{animation:none}}
   .plate{display:block;width:100%;max-width:380px;height:auto;margin:0 auto 28px}
   .disc{display:block;width:100%;max-width:380px;height:auto;margin:0 auto 22px}
   .bts{margin:10px 0 -4px;text-align:center;font-size:1.05rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--olive-dark)}
@@ -101,7 +107,7 @@
   <div class="actions">
     <!-- ETSY GOMB: a shop nyitásakor ide kerül vissza (első gomb, btn-main):
     <a class="btn btn-main" href="https://www.etsy.com/shop/NPmadeStudio">Shop on Etsy</a> -->
-    <a class="btn btn-main" href="https://tinyurl.com/npmade-news">Join the newsletter</a>
+    <a class="btn btn-main btn-icon btn-news" href="https://tinyurl.com/npmade-news"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13zm2.3.5 7.7 6.2L19.7 6H4.3zM20 7.6l-7.4 6a1 1 0 0 1-1.2 0L4 7.6V18h16V7.6z"/></svg><span>Join the newsletter</span></a>
     <p class="bts">Behind the scenes</p>
     <a class="btn btn-ghost btn-icon" href="https://www.instagram.com/n.p.made"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0-2.2C8.7 0 8.3 0 7.1.1 5.8.1 4.9.3 4.1.6c-.8.3-1.5.7-2.1 1.4C1.3 2.6.9 3.3.6 4.1.3 4.9.1 5.8.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9c.1 1.3.3 2.2.6 2.9.3.8.7 1.5 1.4 2.1.7.7 1.3 1.1 2.1 1.4.8.3 1.6.5 2.9.6 1.2.1 1.6.1 4.9.1s3.7 0 4.9-.1c1.3-.1 2.2-.3 2.9-.6.8-.3 1.5-.7 2.1-1.4.7-.7 1.1-1.3 1.4-2.1.3-.8.5-1.6.6-2.9.1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.1-1.3-.3-2.2-.6-2.9-.3-.8-.7-1.5-1.4-2.1C21.4 1.3 20.7.9 19.9.6 19.1.3 18.2.1 16.9.1 15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.8a1.4 1.4 0 1 0 0 2.9 1.4 1.4 0 0 0 0-2.9z"/></svg><span>Follow on Instagram</span></a>
     <a class="btn btn-ghost btn-icon" href="https://www.pinterest.com/npmade/"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z"/></svg><span>Follow on Pinterest</span></a>
