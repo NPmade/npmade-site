@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="p:domain_verify" content="8ba57cae46b6200eef9b1b155d8c23e1"/>
 <title>N.P.made | Handmade Ceramics, Mugs &amp; Bowls from Warsaw</title>
 <meta name="description" content="Handmade ceramics from Warsaw, Poland: wheel-thrown mugs, bowls and vases in matte glazes, made by a former chef. Custom tableware for restaurants and cafes.">
@@ -32,11 +32,11 @@
     color:var(--ink);
     font-family:"Cormorant Garamond",Georgia,"Times New Roman",serif;font-weight:500;
     line-height:1.6;
-    padding:24px 16px;
+    padding:24px max(16px,env(safe-area-inset-right)) 24px max(16px,env(safe-area-inset-left));
     min-height:100vh;
   }
   main{max-width:560px;margin:0 auto;padding:44px 24px 32px;text-align:center;background:var(--cream);border:1px solid var(--olive-dark);border-radius:3px}
-  .topbar{margin:-24px -16px 24px;position:sticky;top:0;z-index:1;background:var(--ink);color:var(--cream);overflow:hidden;white-space:nowrap;font-size:.85rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;line-height:1;padding:8px 0}
+  .topbar{margin:-24px calc(-1*max(16px,env(safe-area-inset-right))) 24px calc(-1*max(16px,env(safe-area-inset-left)));position:sticky;top:0;z-index:1;background:var(--ink);color:var(--cream);overflow:hidden;white-space:nowrap;font-size:.85rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;line-height:1;padding:8px 0}
   .topbar .track{display:inline-flex;align-items:baseline;animation:ticker 40s linear infinite}
   .topbar .track span{padding:0 1.4em}
   .topbar .track i{display:inline-block;width:6px;height:6px;border-radius:50%;background:#D9B53A;transform:translateY(calc(3px - .33em))}
@@ -90,7 +90,8 @@
   footer{
     font-size:.95rem;color:var(--muted);margin-top:44px;
   }
-  @media (min-width:900px){.topbar{max-width:880px;margin:0 auto;border-radius:3px 3px 0 0;position:static}main{max-width:880px;padding:56px 56px 40px;border-top:0;border-radius:0 0 3px 3px}.bio,.custom{max-width:560px}.plate,.disc{max-width:480px}.soon,.actions{max-width:440px}}
+  @media (min-width:900px) and (hover:hover) and (pointer:fine){.topbar{max-width:880px;margin:0 auto;border-radius:3px 3px 0 0;position:static}main{border-top:0;border-radius:0 0 3px 3px}}
+  @media (min-width:900px){main{max-width:880px;padding:56px 56px 40px}.bio,.custom{max-width:560px}.plate,.disc{max-width:480px}.soon,.actions{max-width:440px}}
 </style>
 </head>
 <body>
