@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Newsletter | N.P.made</title>
+<meta name="description" content="Join the N.P.made newsletter: new batches, studio news and the occasional behind-the-scenes from a Warsaw ceramics workshop.">
+<link rel="canonical" href="https://npmadestudio.com/newsletter">
+<meta property="og:title" content="Be the first to know | N.P.made">
+<meta property="og:description" content="New batches, studio news and the occasional behind-the-scenes. One or two emails a month.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://npmadestudio.com/newsletter">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#F7F1E6;
+    --ink:#2B2723;
+    --muted:#6B6258;
+    --line:#DDD2BF;
+    --olive:#836A10;
+    --olive-dark:#5E4C0B;
+    --sage-dark:#6B7159;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--olive);
+    color:var(--ink);
+    font-family:"Cormorant Garamond",Georgia,"Times New Roman",serif;font-weight:500;
+    line-height:1.6;
+    padding:24px max(16px,env(safe-area-inset-right)) 24px max(16px,env(safe-area-inset-left));
+    min-height:100vh;
+  }
+  main{max-width:560px;margin:0 auto;padding:44px 24px 32px;text-align:center;background:var(--cream);border:1px solid var(--olive-dark);border-radius:3px}
+  .logo{width:104px;height:auto;display:block;margin:0 auto 14px}
+  h1{font-size:2.2rem;line-height:1.2;font-weight:600;margin:0 0 10px;letter-spacing:.01em}
+  .lead{font-size:1.3rem;line-height:1.5;margin:0 auto 28px;max-width:440px;text-wrap:balance}
+  form{max-width:380px;margin:0 auto;text-align:left}
+  .field{margin:0 0 16px}
+  label.entry__label{display:block;font-size:1rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin:0 0 6px}
+  .input{width:100%;font:inherit;font-size:1.2rem;color:var(--ink);background:#fff;border:1px solid var(--olive-dark);border-radius:2px;padding:10px 12px}
+  .input:focus{outline:3px solid var(--ink);outline-offset:2px}
+  .entry__error{display:block;color:#8A2E1E;font-size:1.05rem}
+  .entry__error:empty{display:none}
+  .optin{display:flex;gap:10px;align-items:flex-start;font-size:1.15rem;line-height:1.4;margin:6px 0 10px;cursor:pointer}
+  .optin input{width:20px;height:20px;margin:3px 0 0;flex:none;accent-color:var(--olive)}
+  .privacy{font-size:1.02rem;line-height:1.45;color:var(--muted);margin:0 0 20px}
+  .privacy a{color:inherit}
+  .btn{display:block;width:100%;font:inherit;font-size:1.15rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:15px 24px;border:0;border-radius:2px;background:var(--sage-dark);color:var(--cream);cursor:pointer}
+  .btn:hover{background:#565C47}
+  .btn:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+  .btn .progress-indicator__icon{display:none}
+  .sib-form-message-panel{display:none;max-width:380px;margin:0 auto 20px;padding:16px 18px;border-radius:2px;font-size:1.2rem;line-height:1.4;text-align:center}
+  #success-message{background:var(--ink);color:var(--cream)}
+  #error-message{border:1px solid #8A2E1E;color:#8A2E1E}
+  .input--hidden{display:none !important}
+  footer{font-size:.95rem;color:var(--muted);margin-top:44px}
+  footer a{color:inherit}
+  @media (min-width:900px){main{max-width:880px;padding:56px 56px 40px}.lead{max-width:560px}}
+</style>
+</head>
+<body>
+<main>
+  <a href="/"><img class="logo" src="logo.png" alt="N.P.made"></a>
+  <h1>Be the first to know</h1>
+  <p class="lead">New batches, studio news and the occasional behind-the-scenes from my Warsaw workshop. One or two emails a month, no spam. Unsubscribe anytime.</p>
+
+  <!-- Brevo form "N.P.made newsletter": submitted by Brevo's own script (main.js below) -->
+  <div class="sib-form">
+    <div id="sib-form-container" class="sib-form-container">
+      <div id="error-message" class="sib-form-message-panel" role="alert">
+        <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+          <span class="sib-form-message-panel__inner-text">Your subscription could not be saved. Please try again.</span>
+        </div>
+      </div>
+      <div id="success-message" class="sib-form-message-panel" role="status">
+        <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+          <span class="sib-form-message-panel__inner-text">Thank you for subscribing! Welcome to the crew. Check your inbox for a hello from me.</span>
+        </div>
+      </div>
+      <div id="sib-container" class="sib-container--large sib-container--vertical">
+        <form id="sib-form" method="POST" action="https://b8adc214.sibforms.com/serve/MUIFACLi_tBiWR3XpdHJRrPBzdrN5wBkCyGUnvnCy6T218Ar5OTsa0GwxbCLdWvQyYjQC67KyYtQgNifUkaejvSmLafrYe8oAKTeeacpFtMDww4caVTHV5rMWf74YUXqmXCdD2KrTlWNs_FR3cK0OAlGg7VHuBHd8FW0RYX3QApHU5hjVJRKwJAw-OQySJ9rROyieGB3nVEnd7NMIA==" data-type="subscription">
+          <div class="sib-input sib-form-block field">
+            <div class="form__entry entry_block">
+              <div class="form__label-row">
+                <label class="entry__label" for="FIRSTNAME">First name</label>
+                <div class="entry__field">
+                  <input class="input" maxlength="200" type="text" id="FIRSTNAME" name="FIRSTNAME" autocomplete="given-name">
+                </div>
+              </div>
+              <label class="entry__error entry__error--primary"></label>
+            </div>
+          </div>
+          <div class="sib-input sib-form-block field">
+            <div class="form__entry entry_block">
+              <div class="form__label-row">
+                <label class="entry__label" for="EMAIL" data-required="*">Email</label>
+                <div class="entry__field">
+                  <input class="input" type="email" id="EMAIL" name="EMAIL" autocomplete="email" data-required="true" required>
+                </div>
+              </div>
+              <label class="entry__error entry__error--primary"></label>
+            </div>
+          </div>
+          <div class="sib-optin sib-form-block">
+            <div class="form__entry entry_mcq">
+              <div class="form__label-row">
+                <div class="entry__choice">
+                  <label class="optin">
+                    <input type="checkbox" class="input_replaced" value="1" id="OPT_IN" name="OPT_IN" required>
+                    <span>I agree to receive the N.P.made newsletter</span>
+                  </label>
+                </div>
+              </div>
+              <label class="entry__error entry__error--primary"></label>
+            </div>
+          </div>
+          <p class="privacy">Your email is used only for this newsletter and stored securely with Brevo, my email provider. I never share it. Unsubscribe anytime with the link in every email, or write to <a href="mailto:info@npmadestudio.com">info@npmadestudio.com</a> to have your data deleted.</p>
+          <div class="sib-form-block">
+            <button class="btn sib-form-block__button sib-form-block__button-with-loader" form="sib-form" type="submit">
+              <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512" aria-hidden="true"></svg>
+              Subscribe
+            </button>
+          </div>
+          <input type="text" name="email_address_check" value="" class="input--hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <input type="hidden" name="locale" value="en">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer><a href="/">Home</a> &middot; <a href="/about">About</a> &middot; &copy; N.P.made</footer>
+</main>
+<script>
+  window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
+  window.LOCALE = 'en';
+  window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "That email doesn't look right. Please check it and try again.";
+  window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank.";
+  window.GENERIC_INVALID_MESSAGE = "That doesn't look right. Please check it and try again.";
+  window.translation = {
+    common: {
+      selectedList: '{quantity} list selected',
+      selectedLists: '{quantity} lists selected',
+      selectedOption: '{quantity} selected',
+      selectedOptions: '{quantity} selected',
+    }
+  };
+  var AUTOHIDE = Boolean(0);
+</script>
+<script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+</body>
+</html>
