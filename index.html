@@ -43,11 +43,11 @@
     min-height:100vh;
   }
   main{max-width:560px;margin:0 auto;padding:44px 24px 32px;text-align:center;background:var(--cream);border:1px solid var(--olive-dark);border-radius:3px}
-  .topbar{display:flex;align-items:center;margin:-24px calc(-1*max(16px,env(safe-area-inset-right))) 24px calc(-1*max(16px,env(safe-area-inset-left)));position:sticky;top:0;z-index:1;background:var(--sage-dark);color:var(--cream);overflow:hidden;white-space:nowrap;font-size:.85rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;line-height:1;padding:8px 0}
-  .topbar .track{flex:1 1 auto;min-width:0;display:inline-flex;align-items:baseline;animation:ticker 40s linear infinite}
+  .topbar{margin:-24px calc(-1*max(16px,env(safe-area-inset-right))) 24px calc(-1*max(16px,env(safe-area-inset-left)));position:sticky;top:0;z-index:1;background:var(--sage-dark);color:var(--cream);overflow:hidden;white-space:nowrap;font-size:.85rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;line-height:1;padding:8px 0}
+  .topbar .track{display:inline-flex;align-items:baseline;animation:ticker 40s linear infinite}
   .topbar .track span{padding:0 1.4em}
   .topbar .track i{display:inline-block;width:6px;height:6px;border-radius:50%;background:#D9B53A;transform:translateY(calc(3px - .33em))}
-  .topbar-news{flex:none;position:relative;z-index:1;display:flex;align-items:center;gap:7px;margin:-8px 0;align-self:stretch;padding:0 16px;background:#D9B53A;color:var(--ink);text-decoration:none;font-size:.85rem;letter-spacing:.14em;box-shadow:-14px 0 14px var(--sage-dark)}
+  .topbar-news{position:absolute;top:0;right:0;bottom:0;z-index:1;display:flex;align-items:center;gap:7px;padding:0 16px;background:#D9B53A;color:var(--ink);text-decoration:none;font-size:.85rem;letter-spacing:.14em;box-shadow:-14px 0 14px var(--sage-dark)}
   .topbar-news svg{width:1.15em;height:1.15em;fill:currentColor}
   .topbar-news:hover{background:var(--cream)}
   .topbar-news:focus-visible{outline:3px solid var(--cream);outline-offset:-3px}
