@@ -105,6 +105,14 @@
   .btn-icon{display:flex;align-items:center;justify-content:center;gap:10px}
   .btn-icon svg{width:1.25em;height:1.25em;flex:none;fill:currentColor}
   .btn-ghost:hover{background:var(--ink);color:var(--cream)}
+  .fair{max-width:420px;margin:0 auto 30px;padding:20px 18px 18px;border:1px solid var(--sage);background:#EFE9DB;border-radius:3px}
+  .fair .k{margin:0 0 6px;font-size:.9rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--olive-dark)}
+  .fair h2{font-size:1.5rem;font-weight:600;margin:0 0 6px}
+  .fair .when{margin:0;font-size:1.2rem;font-weight:700}
+  .fair .where{margin:4px 0 0;font-size:1.1rem}
+  .fair .small{margin:6px 0 12px;font-size:.98rem;color:var(--muted)}
+  .fair .cash{display:inline-block;margin:0 0 14px;padding:4px 12px;background:var(--sage);color:var(--cream);font-size:.9rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;border-radius:2px}
+  .fair .btn{max-width:300px;margin:0 auto}
   .story-link{display:inline-flex;align-items:center;gap:8px;margin:0 0 30px;padding:8px 20px;border:1px solid var(--olive);background:transparent;border-radius:2px;font-size:1rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--olive-dark);text-decoration:none}
   .story-link:hover{background:var(--olive-dark);border-color:var(--olive-dark);color:var(--cream)}
   .btn:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
@@ -148,6 +156,17 @@
     <a class="btn btn-main btn-icon btn-news" href="/newsletter"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13zm2.3.5 7.7 6.2L19.7 6H4.3zM20 7.6l-7.4 6a1 1 0 0 1-1.2 0L4 7.6V18h16V7.6z"/></svg><span>Join the newsletter</span></a>
   </div>
   <a class="story-link" href="/about">My story</a>
+
+  <section class="fair" id="fair" aria-labelledby="fair-h">
+    <p class="k">Meet me in person</p>
+    <h2 id="fair-h">My first fair in Warsaw</h2>
+    <p class="when">Sunday, 29 November &middot; 11:00&ndash;16:00</p>
+    <p class="where">Syrena Charity Bazaar, ul. D&#322;uga 13/15</p>
+    <p class="small">Conference room of the Ordinariate of the Polish Field Army, entrance on the left of the main gate. Come and hold the pieces in your hands, including a few new ones you won&rsquo;t find in my shop yet.</p>
+    <span class="cash">Cash only</span>
+    <a class="btn btn-main" href="https://www.google.com/maps/search/?api=1&amp;query=ul.+D%C5%82uga+13%2F15%2C+Warszawa">Get directions</a>
+  </section>
+  <script>(function(){if(Date.now()>Date.parse('2026-11-29T16:00:00+01:00')){var f=document.getElementById('fair');if(f)f.remove();}})();</script>
 
   <section class="shop" aria-labelledby="shop-h">
     <h2 id="shop-h">From the wheel</h2>
